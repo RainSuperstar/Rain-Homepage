@@ -241,8 +241,19 @@
   lastTime = performance.now();
   animationId = requestAnimationFrame(tick);
 
-  // Cleanup on page unload (optional but good practice)
-  window.addEventListener('beforeunload', () => {
-    if (animationId) cancelAnimationFrame(animationId);
+  // Use Page Visibility API to pause/resume instead of beforeunload
+  // (beforeunload can fire on mailto: clicks, killing the animation)
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      if (animationId) {
+        cancelAnimationFrame(animationId);
+        animationId = null;
+      }
+    } else {
+      if (!animationId) {
+        lastTime = performance.now();
+        animationId = requestAnimationFrame(tick);
+      }
+    }
   });
 })();
