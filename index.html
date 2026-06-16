@@ -12,55 +12,113 @@
 
   <!-- 毛玻璃主面板 -->
   <main class="glass-card">
-    <!-- 主标题：Rain（带 Glitch 故障特效） -->
-    <h1 class="title-glitch" data-text="Rain">Rain</h1>
 
-    <!-- 状态栏 -->
-    <div class="status-bar">
-      <span class="dot-pulse"></span>
-      <p>在学习建模与画画，打工中...</p>
-    </div>
+    <!-- Header: Avatar + Name + Tagline -->
+    <header class="card-header">
+      <div class="avatar">
+        <span>R</span>
+      </div>
+      <h1 class="title-glitch" data-text="Rain">Rain</h1>
+      <p class="tagline">建模 & 插画 · 兼职打工 · 攒启动金</p>
+      <div class="status-bar">
+        <span class="dot-pulse"></span>
+        <span>打工中，业余学习建模与画画</span>
+      </div>
+    </header>
 
-    <!-- 分割线 -->
     <hr class="divider">
 
-    <!-- 个人详情区 -->
-    <section class="details">
-      <div class="detail-item">
-        <span class="label">🎯 目标</span>
-        <span class="value">攒到第一笔启动金</span>
-      </div>
-      <div class="detail-item">
-        <span class="label">🎮 爱好</span>
-        <span class="value">解谜游戏 & 阅读</span>
-      </div>
-      <div class="detail-item">
-        <span class="label">✉️ 邮箱</span>
-        <a href="mailto:rainandsuperstar@gmail.com" class="value link">rainandsuperstar@gmail.com</a>
+    <!-- About / Bio -->
+    <section class="section bio">
+      <h2 class="section-title">About</h2>
+      <p>
+        你好，我是 Rain。目前一边打工一边自学 3D 建模和插画，
+        希望有一天能靠创作养活自己。喜欢沉浸式解谜游戏和安静的阅读时光，
+        现阶段的目标是攒到第一笔启动金，然后全力去做自己真正想做的事。
+      </p>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Currently -->
+    <section class="section currently">
+      <h2 class="section-title">Currently</h2>
+      <div class="currently-grid">
+        <div class="currently-item">
+          <span class="currently-icon">📚</span>
+          <span class="currently-text">学习 Blender 3D 建模</span>
+        </div>
+        <div class="currently-item">
+          <span class="currently-icon">🎨</span>
+          <span class="currently-text">练习数字绘画 & 速写</span>
+        </div>
+        <div class="currently-item">
+          <span class="currently-icon">💼</span>
+          <span class="currently-text">兼职打工攒钱中</span>
+        </div>
+        <div class="currently-item">
+          <span class="currently-icon">🧩</span>
+          <span class="currently-text">通关各种解谜游戏</span>
+        </div>
       </div>
     </section>
 
-    <!-- 链接占位符 —— 极简 Icon -->
-    <nav class="icon-links">
-      <a href="https://github.com" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub" title="GitHub">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-        </svg>
-      </a>
-      <a href="#" class="icon-btn" aria-label="作品集" title="作品集">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-          <line x1="8" y1="21" x2="16" y2="21"/>
-          <line x1="12" y1="17" x2="12" y2="21"/>
-        </svg>
-      </a>
-      <a href="mailto:rainandsuperstar@gmail.com" class="icon-btn" aria-label="Email" title="Email">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2" y="4" width="20" height="16" rx="2"/>
-          <polyline points="22,4 12,13 2,4"/>
-        </svg>
-      </a>
+    <hr class="divider">
+
+    <!-- Goals & Interests -->
+    <section class="section goals">
+      <h2 class="section-title">Goals & Hobbies</h2>
+      <div class="detail-row">
+        <div class="detail-card">
+          <span class="detail-label">🎯 目标</span>
+          <span class="detail-value highlight">攒到第一笔启动金</span>
+        </div>
+        <div class="detail-card">
+          <span class="detail-label">🎮 爱好</span>
+          <span class="detail-value">解谜游戏 & 阅读</span>
+        </div>
+        <div class="detail-card">
+          <span class="detail-label">✉️ 邮箱</span>
+          <a href="mailto:rainandsuperstar@gmail.com" class="detail-value link">rainandsuperstar@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Social Links -->
+    <nav class="section social">
+      <h2 class="section-title">Find Me</h2>
+      <div class="icon-links">
+        <a href="https://github.com/RainSuperstar" target="_blank" rel="noopener" class="icon-btn" title="GitHub @RainSuperstar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+          <span class="icon-label">GitHub</span>
+        </a>
+        <a href="#" class="icon-btn" title="作品集（即将上线）">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+            <line x1="8" y1="21" x2="16" y2="21"/>
+            <line x1="12" y1="17" x2="12" y2="21"/>
+          </svg>
+          <span class="icon-label">作品集</span>
+        </a>
+        <a href="mailto:rainandsuperstar@gmail.com" class="icon-btn" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <polyline points="22,4 12,13 2,4"/>
+          </svg>
+          <span class="icon-label">Email</span>
+        </a>
+      </div>
     </nav>
+
+    <!-- Footer -->
+    <footer class="card-footer">
+      <p>「 当你在雨中行走，你就成了雨的一部分 」</p>
+      <span>&copy; Rain · 2026</span>
+    </footer>
   </main>
 
   <script src="script.js"></script>
